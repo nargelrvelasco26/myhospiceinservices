@@ -16,7 +16,7 @@ import type { Topic } from '../../lib/types'
 export const topics: Topic[] = [
   {
     id: 'company-orientation-pdf',
-    title: 'Company Orientation (PDF)',
+    title: 'Company Orientation',
     description:
       'View the original Company Orientation guide as a PDF, with its full images and layout.',
     icon: 'FileText',
@@ -111,7 +111,7 @@ export const topics: Topic[] = [
   // },
   {
     id: 'bag-technique-pdf',
-    title: 'Bag Technique (PDF)',
+    title: 'Bag Technique',
     description:
       'View the original Bag Technique in-service guide as a PDF, with its full images and layout.',
     icon: 'FileText',
@@ -122,7 +122,7 @@ export const topics: Topic[] = [
   },
   {
     id: 'start-of-care-checklist-pdf',
-    title: 'Start of Care / Nursing Checklist (PDF)',
+    title: 'Start of Care / Nursing Checklist',
     description:
       'View the original Start of Care / Nursing Checklist in-service guide as a PDF, with its full images and layout.',
     icon: 'FileText',
@@ -133,7 +133,7 @@ export const topics: Topic[] = [
   },
   {
     id: 'explanation-of-benefits-pdf',
-    title: 'Explanation of Benefits (EOB) (PDF)',
+    title: 'Explanation of Benefits (EOB)',
     description:
       'View the original Explanation of Benefits (EOB) in-service guide as a PDF, with its full images and layout.',
     icon: 'FileText',
@@ -144,7 +144,7 @@ export const topics: Topic[] = [
   },
   {
     id: 'hospice-admission-protocol-pdf',
-    title: 'Hospice Admission Protocol (PDF)',
+    title: 'Hospice Admission Protocol',
     description:
       'View the original Hospice Admission Protocol in-service guide as a PDF, with its full images and layout.',
     icon: 'FileText',
@@ -155,7 +155,7 @@ export const topics: Topic[] = [
   },
   {
     id: 'comprehensive-assessment-hope-pdf',
-    title: 'Comprehensive Assessment & HOPE (PDF)',
+    title: 'Comprehensive Assessment & HOPE',
     description:
       'View the original Comprehensive Assessment & HOPE in-service guide as a PDF, with its full images and layout.',
     icon: 'FileText',
@@ -166,7 +166,7 @@ export const topics: Topic[] = [
   },
   {
     id: 'hospice-101-pdf',
-    title: 'Hospice 101 (PDF)',
+    title: 'Hospice 101',
     description:
       'View the original Hospice 101 in-service guide as a PDF, with its full images and layout.',
     icon: 'FileText',
@@ -177,7 +177,7 @@ export const topics: Topic[] = [
   },
   {
     id: 'bloodborne-pathogens-pdf',
-    title: 'Bloodborne Pathogens (PDF)',
+    title: 'Bloodborne Pathogens',
     description:
       'View the original Bloodborne Pathogens in-service guide as a PDF, with its full images and layout.',
     icon: 'FileText',

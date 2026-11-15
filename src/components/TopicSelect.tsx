@@ -17,10 +17,7 @@ export function TopicSelect({
   const filteredTopics = topics.filter((topic) => {
     const q = query.trim().toLowerCase()
     if (!q) return true
-    return (
-      topic.title.toLowerCase().includes(q) ||
-      topic.description.toLowerCase().includes(q)
-    )
+    return topic.title.toLowerCase().includes(q)
   })
 
   return (
@@ -95,12 +92,9 @@ export function TopicSelect({
                 <div className="w-11 h-11 rounded-full bg-hospice-card-green flex items-center justify-center mb-4">
                   <Icon name={topic.icon} className="text-hospice-green-dark" size={22} />
                 </div>
-                <h2 className="font-serif text-lg font-bold text-hospice-green-dark mb-1.5">
+                <h2 className="font-serif text-lg font-bold text-hospice-green-dark mb-4">
                   {topic.title}
                 </h2>
-                <p className="text-sm text-slate-600 leading-relaxed mb-4">
-                  {topic.description}
-                </p>
 
                 {available ? (
                   <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-hospice-green">

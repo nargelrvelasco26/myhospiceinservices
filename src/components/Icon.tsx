@@ -99,6 +99,10 @@ import {
   Handshake,
   Percent,
   XCircle,
+  Truck,
+  Monitor,
+  GraduationCap,
+  Gift,
   type LucideIcon,
 } from 'lucide-react'
 import type { IconName } from '../lib/types'
@@ -204,6 +208,10 @@ const ICONS: Record<IconName, LucideIcon> = {
   Handshake,
   Percent,
   XCircle,
+  Truck,
+  Monitor,
+  GraduationCap,
+  Gift,
 }
 
 export function Icon({

@@ -4,11 +4,22 @@ import { slides as hopeSlides } from './hope.slides'
 import { slides as hipaaSlides } from './hipaa.slides'
 import { slides as socSlides } from './soc.slides'
 import { slides as eobSlides } from './eob.slides'
+import { slides as admissionProtocolSlides } from './admission-protocol.slides'
+import { slides as companyOrientationSlides } from './company-orientation.slides'
 
 // Add new in-service topics here as they're created.
 // Each topic needs its own `<id>.slides.ts` file exporting a `slides: Slide[]`
 // array, then register it below.
 export const topics: Topic[] = [
+  {
+    id: 'company-orientation',
+    title: 'Company Orientation',
+    description:
+      'Meet the Haloes Touch family, our mission and values, and the policies every employee follows.',
+    icon: 'Users',
+    status: 'available',
+    slides: companyOrientationSlides,
+  },
   {
     id: 'hospice-101',
     title: 'Hospice 101',
@@ -53,5 +64,14 @@ export const topics: Topic[] = [
     icon: 'DollarSign',
     status: 'available',
     slides: eobSlides,
+  },
+  {
+    id: 'hospice-admission-protocol',
+    title: 'Hospice Admission Protocol',
+    description:
+      'The 10-step admission process from referral to initiation of services, with timelines and who is responsible.',
+    icon: 'ClipboardCheck',
+    status: 'available',
+    slides: admissionProtocolSlides,
   },
 ]

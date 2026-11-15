@@ -99,6 +99,10 @@ export type IconName =
   | 'Handshake'
   | 'Percent'
   | 'XCircle'
+  | 'Truck'
+  | 'Monitor'
+  | 'GraduationCap'
+  | 'Gift'
 
 export interface CardItem {
   icon: IconName

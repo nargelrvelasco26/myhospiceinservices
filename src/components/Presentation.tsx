@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { ChevronLeft, ChevronRight, ArrowLeft, LogOut } from 'lucide-react'
 import type { Topic } from '../lib/types'
 import { SlideView } from './SlideView'
+import { PdfViewer } from './PdfViewer'
 import hthLogo from '../images/hthlogo.png'
 
 export function Presentation({
@@ -14,8 +15,9 @@ export function Presentation({
   onLogout: () => void
 }) {
   const [index, setIndex] = useState(0)
+  const [pdfPages, setPdfPages] = useState(1)
   const slides = topic.slides
-  const total = slides.length
+  const total = topic.pdfUrl ? pdfPages : slides.length
 
   const goTo = useCallback(
     (next: number) => {
@@ -43,7 +45,7 @@ export function Presentation({
   }, [index, goTo, total])
 
   const slide = slides[index]
-  const progress = ((index + 1) / total) * 100
+  const progress = total > 0 ? ((index + 1) / total) * 100 : 0
 
   return (
     <div className="h-screen w-screen flex flex-col bg-hospice-cream overflow-hidden">
@@ -78,11 +80,17 @@ export function Presentation({
         </div>
       </header>
 
-      <main className="flex-1 overflow-y-auto px-6 sm:px-12 md:px-20 py-8 md:py-12">
-        <div className="max-w-5xl mx-auto h-full">
-          <SlideView key={index} slide={slide} />
-        </div>
-      </main>
+      {topic.pdfUrl ? (
+        <main className="flex-1 overflow-hidden bg-slate-200 p-4">
+          <PdfViewer url={topic.pdfUrl} page={index + 1} onLoad={setPdfPages} />
+        </main>
+      ) : (
+        <main className="flex-1 overflow-y-auto px-6 sm:px-12 md:px-20 py-8 md:py-12">
+          <div className="max-w-5xl mx-auto h-full">
+            <SlideView key={index} slide={slide} />
+          </div>
+        </main>
+      )}
 
       <footer className="shrink-0 border-t border-hospice-card-green bg-white">
         <div className="h-1 bg-hospice-card-green">

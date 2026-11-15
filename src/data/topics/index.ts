@@ -6,6 +6,8 @@ import { slides as socSlides } from './soc.slides'
 import { slides as eobSlides } from './eob.slides'
 import { slides as admissionProtocolSlides } from './admission-protocol.slides'
 import { slides as companyOrientationSlides } from './company-orientation.slides'
+import { slides as bloodbornePathogensSlides } from './bloodborne-pathogens.slides'
+import { slides as bagTechniqueSlides } from './bag-technique.slides'
 
 // Add new in-service topics here as they're created.
 // Each topic needs its own `<id>.slides.ts` file exporting a `slides: Slide[]`
@@ -73,5 +75,33 @@ export const topics: Topic[] = [
     icon: 'ClipboardCheck',
     status: 'available',
     slides: admissionProtocolSlides,
+  },
+  {
+    id: 'bloodborne-pathogens',
+    title: 'Bloodborne Pathogens',
+    description:
+      'Annual OSHA training on bloodborne pathogens, standard precautions and what to do after an exposure.',
+    icon: 'Biohazard',
+    status: 'available',
+    slides: bloodbornePathogensSlides,
+  },
+  {
+    id: 'bag-technique',
+    title: 'Bag Technique',
+    description:
+      'Keeping the nursing bag clean, organized and safe as it travels from home to home.',
+    icon: 'Briefcase',
+    status: 'available',
+    slides: bagTechniqueSlides,
+  },
+  {
+    id: 'bag-technique-pdf',
+    title: 'Bag Technique (PDF)',
+    description:
+      'View the original Bag Technique in-service guide as a PDF, with its full images and layout.',
+    icon: 'FileText',
+    status: 'available',
+    slides: [],
+    pdfUrl: '/pdfs/bag-technique.pdf',
   },
 ]

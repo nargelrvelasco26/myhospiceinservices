@@ -103,6 +103,14 @@ import {
   Monitor,
   GraduationCap,
   Gift,
+  Biohazard,
+  Microscope,
+  Bug,
+  Backpack,
+  SprayCan,
+  Recycle,
+  ShieldCheck,
+  Luggage,
   type LucideIcon,
 } from 'lucide-react'
 import type { IconName } from '../lib/types'
@@ -212,6 +220,14 @@ const ICONS: Record<IconName, LucideIcon> = {
   Monitor,
   GraduationCap,
   Gift,
+  Biohazard,
+  Microscope,
+  Bug,
+  Backpack,
+  SprayCan,
+  Recycle,
+  ShieldCheck,
+  Luggage,
 }
 
 export function Icon({

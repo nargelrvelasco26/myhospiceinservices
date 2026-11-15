@@ -9,7 +9,7 @@ export function IconGridSlide({
 }: {
   eyebrow: string
   title: string
-  items: { icon: IconName; label: string }[]
+  items: { icon: IconName; label: string; image?: string }[]
 }) {
   return (
     <div>
@@ -24,9 +24,15 @@ export function IconGridSlide({
                 : 'bg-hospice-card-green border-hospice-card-green'
             }`}
           >
-            <div className="w-14 h-14 rounded-full bg-hospice-green-dark flex items-center justify-center">
-              <Icon name={item.icon} className="text-white" size={26} />
-            </div>
+            {item.image ? (
+              <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-hospice-green-dark">
+                <img src={item.image} alt={item.label} className="w-full h-full object-cover" />
+              </div>
+            ) : (
+              <div className="w-14 h-14 rounded-full bg-hospice-green-dark flex items-center justify-center">
+                <Icon name={item.icon} className="text-white" size={26} />
+              </div>
+            )}
             <p className="font-semibold text-hospice-green-dark text-sm">{item.label}</p>
           </div>
         ))}

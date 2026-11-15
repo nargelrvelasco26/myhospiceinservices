@@ -103,11 +103,21 @@ export type IconName =
   | 'Monitor'
   | 'GraduationCap'
   | 'Gift'
+  | 'Biohazard'
+  | 'Microscope'
+  | 'Bug'
+  | 'Backpack'
+  | 'SprayCan'
+  | 'Recycle'
+  | 'ShieldCheck'
+  | 'Luggage'
 
 export interface CardItem {
   icon: IconName
   title: string
   body: string
+  image?: string
+  imageFit?: 'cover' | 'contain'
 }
 
 export type Slide =
@@ -158,7 +168,7 @@ export type Slide =
       type: 'icongrid'
       eyebrow: string
       title: string
-      items: { icon: IconName; label: string }[]
+      items: { icon: IconName; label: string; image?: string }[]
     }
   | {
       type: 'team'
@@ -215,4 +225,5 @@ export interface Topic {
   icon: IconName
   status: 'available' | 'comingSoon'
   slides: Slide[]
+  pdfUrl?: string
 }

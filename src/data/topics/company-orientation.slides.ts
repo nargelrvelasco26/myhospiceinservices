@@ -1,4 +1,13 @@
 import type { Slide } from '../../lib/types'
+import aldrinPhoto from '../../images/team/aldrin-pagala.jpg'
+import marivicPhoto from '../../images/team/marivic-eleno.jpg'
+import jasminPhoto from '../../images/team/jasmin-velasco.jpg'
+import mtcLogo from '../../images/partners/mtc-medical-transport.jpg'
+import pharmacyLogo from '../../images/partners/986-pharmacy.jpg'
+import hospiceMdLogo from '../../images/partners/hospicemd.jpg'
+import reliantLogo from '../../images/partners/reliant-medical-supply.jpg'
+import quickbooksLogo from '../../images/partners/quickbooks.jpg'
+import platinumLogo from '../../images/partners/platinum-medical-ltc.jpg'
 
 export const slides: Slide[] = [
   {
@@ -76,10 +85,10 @@ export const slides: Slide[] = [
     eyebrow: 'MEET THE HALOES TOUCH FAMILY',
     title: 'Our leadership',
     items: [
-      { icon: 'UserCog', label: 'Aldrin Pagala, RN \u2014 President & CEO' },
-      { icon: 'UserCog', label: 'Marivic Eleno, RN \u2014 Hospice Administrator' },
+      { icon: 'UserCog', label: 'Aldrin Pagala, RN \u2014 President & CEO', image: aldrinPhoto },
+      { icon: 'UserCog', label: 'Marivic Eleno, RN \u2014 Hospice Administrator', image: marivicPhoto },
       { icon: 'UserCog', label: 'Phil Tobes \u2014 Director of Community Liaison' },
-      { icon: 'UserCog', label: 'Jasmin Velasco \u2014 Administrative Manager' },
+      { icon: 'UserCog', label: 'Jasmin Velasco \u2014 Administrative Manager', image: jasminPhoto },
     ],
   },
   {
@@ -89,6 +98,7 @@ export const slides: Slide[] = [
     items: [
       {
         icon: 'UserCog',
+        image: aldrinPhoto,
         title: 'Role at Haloes Touch',
         body: 'Aldrin Pagala, RN \u2014 President & CEO. Leads Haloes Touch\u2019s vision, strategy and growth, and oversees the organization as a whole.',
       },
@@ -106,6 +116,7 @@ export const slides: Slide[] = [
     items: [
       {
         icon: 'UserCog',
+        image: marivicPhoto,
         title: 'Role at Haloes Touch',
         body: 'Marivic Eleno, RN \u2014 Hospice Administrator. Responsible for day-to-day hospice operations and for compliance with Medicare, state and accreditation requirements.',
       },
@@ -140,6 +151,7 @@ export const slides: Slide[] = [
     items: [
       {
         icon: 'UserCog',
+        image: jasminPhoto,
         title: 'Role at Haloes Touch',
         body: 'Jasmin Velasco \u2014 Administrative Manager. Manages office operations, administrative processes and support for the Haloes Touch team.',
       },
@@ -549,13 +561,13 @@ export const slides: Slide[] = [
     eyebrow: 'WORKING TOGETHER',
     title: 'Meet our partners',
     items: [
-      { icon: 'Truck', title: 'MTC Medical Transport', body: 'Non-emergency medical transportation.' },
-      { icon: 'Pill', title: '986 Pharmacy', body: 'Pharmacy services.' },
+      { icon: 'Truck', image: mtcLogo, imageFit: 'contain', title: 'MTC Medical Transport', body: 'Non-emergency medical transportation.' },
+      { icon: 'Pill', image: pharmacyLogo, imageFit: 'contain', title: '986 Pharmacy', body: 'Pharmacy services.' },
       { icon: 'Phone', title: 'RingCentral', body: 'Phone and team communication.' },
-      { icon: 'Monitor', title: 'HospiceMD', body: 'Electronic medical record (EMR).' },
-      { icon: 'Package', title: 'Reliant Medical Supply', body: 'Medical equipment and supplies.' },
-      { icon: 'Landmark', title: 'QuickBooks', body: 'Accounting.' },
-      { icon: 'PackageCheck', title: 'Platinum Medical LTC', body: 'Long-term care pharmacy and medical supplies.' },
+      { icon: 'Monitor', image: hospiceMdLogo, imageFit: 'contain', title: 'HospiceMD', body: 'Electronic medical record (EMR).' },
+      { icon: 'Package', image: reliantLogo, imageFit: 'contain', title: 'Reliant Medical Supply', body: 'Medical equipment and supplies.' },
+      { icon: 'Landmark', image: quickbooksLogo, imageFit: 'contain', title: 'QuickBooks', body: 'Accounting.' },
+      { icon: 'PackageCheck', image: platinumLogo, imageFit: 'contain', title: 'Platinum Medical LTC', body: 'Long-term care pharmacy and medical supplies.' },
     ],
   },
   {

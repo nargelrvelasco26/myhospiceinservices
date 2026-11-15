@@ -104,4 +104,15 @@ export const topics: Topic[] = [
     slides: [],
     pdfUrl: '/pdfs/bag-technique.pdf',
   },
+  {
+    id: 'company-orientation-pdf',
+    title: 'Company Orientation (PDF)',
+    description:
+      'View the original Company Orientation guide as a PDF, with its full images and layout.',
+    icon: 'FileText',
+    status: 'available',
+    slides: [],
+    pdfUrl:
+      'https://acwocotrngkeaxtzdzfz.supabase.co/storage/v1/object/public/InServices/Haloes_Touch_Company_Orientation_PROTECTED.pdf',
+  },
 ]

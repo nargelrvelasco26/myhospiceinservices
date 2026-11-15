@@ -176,6 +176,105 @@ export const topics: Topic[] = [
       'https://acwocotrngkeaxtzdzfz.supabase.co/storage/v1/object/public/InServices/Hospice_101_InService_Haloes_Touch_PROTECTED.pdf',
   },
   {
+    id: 'hipaa-privacy-security-pdf',
+    title: 'HIPAA Privacy & Security',
+    description:
+      'View the original HIPAA Privacy & Security in-service guide as a PDF, with its full images and layout.',
+    icon: 'Lock',
+    status: 'available',
+    slides: [],
+    pdfUrl:
+      'https://acwocotrngkeaxtzdzfz.supabase.co/storage/v1/object/public/InServices/HIPAA_Rules_Compliance_InService_Haloes_Touch_PROTECTED.pdf',
+  },
+  {
+    id: 'postmortem-care-pdf',
+    title: 'Postmortem Care',
+    description:
+      'View the original Postmortem Care in-service guide as a PDF, with its full images and layout.',
+    icon: 'HeartPulse',
+    status: 'available',
+    slides: [],
+    pdfUrl:
+      'https://acwocotrngkeaxtzdzfz.supabase.co/storage/v1/object/public/InServices/Postmortem_Care_InService_Haloes_Touch_PROTECTED.pdf',
+  },
+  {
+    id: 'sexual-harassment-prevention-pdf',
+    title: 'Sexual Harassment Prevention',
+    description:
+      'View the original Sexual Harassment Prevention in-service guide as a PDF, with its full images and layout.',
+    icon: 'ShieldCheck',
+    status: 'available',
+    slides: [],
+    pdfUrl:
+      'https://acwocotrngkeaxtzdzfz.supabase.co/storage/v1/object/public/InServices/Sexual_Harassment_Prevention_InService_Haloes_Touch_PROTECTED.pdf',
+  },
+  {
+    id: 'death-pronouncement-pdf',
+    title: 'Death Pronouncement',
+    description:
+      'View the original Death Pronouncement / After Death Procedures in-service guide as a PDF, with its full images and layout.',
+    icon: 'ClipboardCheck',
+    status: 'available',
+    slides: [],
+    pdfUrl:
+      'https://acwocotrngkeaxtzdzfz.supabase.co/storage/v1/object/public/InServices/Death_Pronouncement_After_Death_Procedures_InService_Haloes_Touch_PROTECTED.pdf',
+  },
+  {
+    id: 'pain-symptom-management-pdf',
+    title: 'Pain & Symptom Management',
+    description:
+      'View the original Pain & Symptom Management in-service guide as a PDF, with its full images and layout.',
+    icon: 'Activity',
+    status: 'available',
+    slides: [],
+    pdfUrl:
+      'https://acwocotrngkeaxtzdzfz.supabase.co/storage/v1/object/public/InServices/Pain_Symptom_Management_InService_Haloes_Touch_PROTECTED.pdf',
+  },
+  {
+    id: 'hospice-eligibility-lcd-documentation-pdf',
+    title: 'Eligibility & LCD Documentation',
+    description:
+      'View the original Hospice Eligibility & LCD Documentation in-service guide as a PDF, with its full images and layout.',
+    icon: 'ClipboardList',
+    status: 'available',
+    slides: [],
+    pdfUrl:
+      'https://acwocotrngkeaxtzdzfz.supabase.co/storage/v1/object/public/InServices/Hospice_Eligibility_LCD_Documentation_InService_Haloes_Touch_PROTECTED.pdf',
+  },
+  {
+    id: 'infection-control-pdf',
+    title: 'Infection Control',
+    description:
+      'View the original Infection Control in-service guide as a PDF, with its full images and layout.',
+    icon: 'ShieldCheck',
+    status: 'available',
+    slides: [],
+    pdfUrl:
+      'https://acwocotrngkeaxtzdzfz.supabase.co/storage/v1/object/public/InServices/Infection_Control_InService_Haloes_Touch_PROTECTED.pdf',
+  },
+  {
+    id: 'fall-prevention-pdf',
+    title: 'Fall Prevention',
+    description:
+      'View the original Fall Prevention / Fall Risk Factors in-service guide as a PDF, with its full images and layout.',
+    icon: 'PersonStanding',
+    status: 'available',
+    slides: [],
+    pdfUrl:
+      'https://acwocotrngkeaxtzdzfz.supabase.co/storage/v1/object/public/InServices/Fall_Risk_Factors_InService_Haloes_Touch_PROTECTED.pdf',
+  },
+  {
+    id: 'patient-rights-pdf',
+    title: 'Patient Rights',
+    description:
+      'View the original Patient Rights & Responsibilities in-service guide as a PDF, with its full images and layout.',
+    icon: 'Handshake',
+    status: 'available',
+    slides: [],
+    pdfUrl:
+      'https://acwocotrngkeaxtzdzfz.supabase.co/storage/v1/object/public/InServices/Patient_Rights_Responsibilities_InService_Haloes_Touch_PROTECTED.pdf',
+  },
+  {
     id: 'bloodborne-pathogens-pdf',
     title: 'Bloodborne Pathogens',
     description:
